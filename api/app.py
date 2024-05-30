@@ -94,7 +94,7 @@ def convert_mask_to_color(mask):
 
 def run(raw_data):
     image, size_x, size_y = preprocess_image(raw_data)
-    model = keras.models.load_model("./model/mini_unet_hd_complete.h5", custom_objects={"CustomMeanIoU": CustomMeanIoU})
+    model = keras.models.load_model("mini_unet_hd_complete.h5", custom_objects={"CustomMeanIoU": CustomMeanIoU})
     prediction = model.predict(image)
     predicted_mask = np.argmax(prediction, axis=-1).squeeze()  # Remove batch dimension
     

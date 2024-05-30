@@ -1,4 +1,4 @@
-model/mini_unet_hd_complete.h5
+mini_unet_hd_complete.h5
 model/mini_unet_SA_complete.keras
 model/mini_unet_SA.weights.keras
 model/mini_unet_SA_complete/config.json
