@@ -47,9 +47,9 @@ jobs:
     run: |
       cd model
       az storage blob download \
-      --account-name projet-8 \
-      --container-name kerasmodels  \
-      --name /models/mini_unet_hd_complete.h5 \
+      --account-name kerasmodels \
+      --container-name models  \
+      --name mini_unet_hd_complete.h5 \
       --file mini_unet_hd_complete.h5 \
       --account-key XyAXRxGbQEAfR+C2Yd7LLQ5E/7h2A3JiDaEehqMDBlXCE6biW7jOCOPTy7qI9GxoXqmCVA9XVbhl+AStepmviA== \
       --auth-mode key
