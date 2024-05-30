@@ -23,7 +23,7 @@ if uploaded_file is not None:
     
     # Envoyer l'image à l'API Flask
     st.write("Envoi de l'image à l'API Flask pour prédiction...")
-    response = requests.post(API_URL, files={"file": img_bytes})
+    response = requests.post(API_URL, data=img_bytes, headers={"Content-Type": "application/octet-stream"})
     
     if response.status_code == 200:
         st.write("Prédiction reçue de l'API Flask")
