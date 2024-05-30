@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 # URL de votre API Flask
-API_URL = "http://127.0.0.1:5000/predict-mask"
+API_URL = "https://semantic-seg.azurewebsites.net/predict-mask"
 
 st.title("Application de Segmentation Sémantique")
 
