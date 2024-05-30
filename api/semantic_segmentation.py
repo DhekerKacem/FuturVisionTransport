@@ -1,9 +1,7 @@
 from io import BytesIO
-import json
-import os
 import cv2
 import numpy as np
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, send_file
 import keras.src.saving
 import tensorflow as tf
 from tensorflow.keras import backend as K
