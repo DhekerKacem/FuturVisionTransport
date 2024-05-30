@@ -1,0 +1,6 @@
+model/mini_unet_hd_complete.h5
+model/mini_unet_SA_complete.keras
+model/mini_unet_SA.weights.keras
+model/mini_unet_SA_complete/config.json
+Note technique.docx
+Note technique (Récupération automatique).docx
